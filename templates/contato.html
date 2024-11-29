@@ -1,6 +1,39 @@
 {% extends "modelo-base.html" %}
 {% block conteudo %}
 
+<div class="container-contato">
+    <!-- Primeira Coluna - Informações de Contato -->
+    <div class="coluna-esquerda">
+        <div class="informacoes-contato">
+            <p><span class="material-icons-outlined">business</span> <strong>TC Gadgets</strong></p>
+            <p><span class="material-icons-outlined">phone</span> <strong>Telefone:</strong> <a href="tel:+5540045988">4004-5988</a></p>
+            <p><span class="material-icons-outlined">whatsapp</span> <strong>WhatsApp:</strong> <a href="https://wa.me/5511995876977" target="_blank">+55 11 99587-6977</a></p>
+            <p><span class="material-icons-outlined">email</span> <strong>E-mail:</strong> <a href="mailto:contato@tcgadgets.com.br">contato@tcgadgets.com.br</a></p>
+        </div>
+    </div>
 
+    <!-- Linha separadora -->
+    <div class="linha-separadora"></div>
+
+    <!-- Segunda Coluna - Formulário de Contato -->
+    <div class="coluna-direita">
+        <h2>Fale Conosco</h2>
+        <form action="enviar" method="POST">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone para contato" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail para contato" required>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="8" cols="40" placeholder="Deixe sua mensagem" required></textarea>
+
+            <button type="submit" class="enviar-btn">Enviar</button>
+        </form>
+    </div>
+</div>
 
 {% endblock %}

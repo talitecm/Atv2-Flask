@@ -17,3 +17,7 @@ def contato():
 @app.route('/aboutus')
 def aboutus():
     return render_template('aboutus.html')
+
+@app.route('/login')
+def login():
+    return render_template('login.html')
