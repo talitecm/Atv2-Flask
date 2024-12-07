@@ -1,4 +1,45 @@
 {% extends "modelo-base.html" %}
 {% block conteudo %}
 
+<div class="grid-container">
+    <div class="grid-pdt">
+        <!-- Card 1 -->
+        <a href="{{url_for('gphero4')}}" class="card">
+            <img src="../static/img/gopro-hero4.jpg" alt="Go Pro Hero 4">
+            <p class="nome-pdt">GoPro Hero 4"</p>
+            Ver Produto
+        </a>
+        <!-- Card 2 -->
+        <a href="{{url_for('phantom4p')}}" class="card">
+            <img src="../static/img/phantom4-advanced2.png" alt="Phantom 4 Advanced">
+            <p class="nome-pdt">Dji Phantom 4 Advanced</p>
+            Ver Produto
+        </a>
+        <!-- Card 3 -->
+        <a href="{{url_for('batphantom4p')}}" class="card">
+            <img src="../static/img/bateria-dji-phantom4pro.webp" alt="Bateria Dji">
+            <p class="nome-pdt">Bateria Phantom 4</p>
+            Ver Produto
+        </a>
+        <!-- Card 4 -->
+        <a href="{{url_for('awse40mm')}}" class="card">
+            <img src="../static/img/apple-watch-se-gps-40mm.png" alt="Apple Watch SE">
+            <p class="nome-pdt">Apple Watch SE 44mm</p>
+            Ver Produto
+        </a>
+        <!-- Card 5 -->
+        <a href="{{url_for('gultra47mm')}}" class="card">
+            <img src="../static/img/galaxy-watch-ultra-lte-47mm.png" alt="Galaxy Watch Ultra">
+            <p class="nome-pdt">Galaxy Watch Ultra LTE 47mm</p>
+            Ver Produto
+        </a>
+        <!-- Card 6 -->
+        <a href="{{url_for('gwatch7')}}" class="card">
+            <img src="../static/img/Galaxy-watch7-44mm.webp" alt="Galaxy Watch 7">
+            <p class="nome-pdt">Galaxy Watch 7</p>
+            Ver Produto
+        </a>
+    </div>
+</div>
+
 {% endblock %}

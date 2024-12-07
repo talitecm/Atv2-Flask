@@ -1,117 +1,168 @@
-body{
+body {
     font-family: 'Poppins', sans-serif;
+    display: flex;
 }
 
 /* Estilo do h1 */
-.h1-marca{
+.h1-marca {
     margin-left: 2em;
     font-size: 48px;
-    font-weight: 600;  /* Peso Medium */
-    font-style: italic; /* Estilo Itálico */
-    text-shadow: -3px 2px 4px rgba(130, 130, 130, 0.814); /* Sombra à esquerda e para baixo */
+    font-weight: 600;
+    /* Peso Medium */
+    font-style: italic;
+    /* Estilo Itálico */
+    text-shadow: -3px 2px 4px rgba(130, 130, 130, 0.814);
+    /* Sombra à esquerda e para baixo */
 }
 
 /* Estilo da nav */
 nav {
     display: flex;
-    justify-content: center; /* Centraliza os links horizontalmente */
-    align-items: center; /* Centraliza os links verticalmente */
-    width: 100%; /* Garante que ocupe toda a largura disponível */
+    justify-content: center;
+    /* Centraliza os links horizontalmente */
+    align-items: center;
+    /* Centraliza os links verticalmente */
+    width: 100%;
+    /* Garante que ocupe toda a largura disponível */
 }
 
 /* Estilo dos itens nav */
 nav a {
-    color: #000; /* Cor fixa do texto do link */
-    text-decoration: none; /* Remover sublinhado */
-    padding: 10px 20px; /* Adiciona espaço ao redor do texto */
-    display: inline-block; /* Para o padding funcionar corretamente */
-    transition: background-color 0.3s ease; /* Suaviza a transição de fundo */
+    color: #000;
+    /* Cor fixa do texto do link */
+    text-decoration: none;
+    /* Remover sublinhado */
+    padding: 10px 20px;
+    /* Adiciona espaço ao redor do texto */
+    display: inline-block;
+    /* Para o padding funcionar corretamente */
+    transition: background-color 0.3s ease;
+    /* Suaviza a transição de fundo */
 }
 
 /* Estilo do cursor */
 nav a:hover {
-    background-color: rgba(169, 169, 169, 0.2); /* Fundo transparente quando passar o mouse */
-    cursor: pointer; /* Estilo de mão com dedo */
+    background-color: rgba(169, 169, 169, 0.2);
+    /* Fundo transparente quando passar o mouse */
+    cursor: pointer;
+    /* Estilo de mão com dedo */
 }
 
 /* Estilo do link de login */
 .login-link {
-    display: flex; /* Exibe o ícone e o texto em linha */
-    align-items: center; /* Alinha o ícone verticalmente com o texto */
-    font-size: 16px; /* Tamanho da fonte */
-    padding: 10px 20px; /* Espaçamento dentro do link */
-    border-radius: 5px; /* Bordas arredondadas */
+    display: flex;
+    /* Exibe o ícone e o texto em linha */
+    align-items: center;
+    /* Alinha o ícone verticalmente com o texto */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    padding: 10px 20px;
+    /* Espaçamento dentro do link */
+    border-radius: 5px;
+    /* Bordas arredondadas */
     transition: background-color 0.3s ease;
-    position: absolute; /* Permite que o link seja posicionado no canto direito */
-    right: 20px; /* Alinha o link de login 20px da borda direita */
+    position: absolute;
+    /* Permite que o link seja posicionado no canto direito */
+    right: 20px;
+    /* Alinha o link de login 20px da borda direita */
 }
 
-/* Certifique-se de que o container não está interferindo */
 .img-cp {
-    width: 100%; /* O container ocupa 100% da largura */
-    height: 50vh; /* O container ocupa 20% da altura da tela */
-    overflow: hidden; /* Evita que conteúdo extra ultrapasse o container */
-    display: flex; /* Garante alinhamento do conteúdo interno */
-    justify-content: center; /* Centraliza a imagem horizontalmente (opcional) */
-    align-items: center; /* Centraliza a imagem verticalmente (opcional) */
-  }
-  
-  /* Estilo da imagem */
-  .img-cp img {
-    width: 100%; /* Define 100% da largura */
-    height: 100%; /* Define 100% da altura do container */
-    object-fit: cover; /* Garante que a imagem preencha o container sem distorção */
-  }
+    width: 100%;
+    /* O container ocupa 100% da largura */
+    height: 50vh;
+    /* O container ocupa 20% da altura da tela */
+    overflow: hidden;
+    /* Evita que conteúdo extra ultrapasse o container */
+    display: flex;
+    /* Garante alinhamento do conteúdo interno */
+    justify-content: center;
+    /* Centraliza a imagem horizontalmente (opcional) */
+    align-items: center;
+    /* Centraliza a imagem verticalmente (opcional) */
+}
+
+/* Estilo da imagem */
+.img-cp img {
+    width: 100%;
+    /* Define 100% da largura */
+    height: 100%;
+    /* Define 100% da altura do container */
+    object-fit: cover;
+    /* Garante que a imagem preencha o container sem distorção */
+}
 
 /* Garantindo que a página ocupe 100% da altura */
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
-    height: 100%; /* Garante que o body ocupe 100% da altura da viewport */
-    display: flex; /* Define o layout flex no body */
-    flex-direction: column; /* Garante que o conteúdo e o rodapé fiquem em uma coluna */
+    height: 100%;
+    /* Garante que o body ocupe 100% da altura da viewport */
+    display: flex;
+    /* Define o layout flex no body */
+    flex-direction: column;
+    /* Garante que o conteúdo e o rodapé fiquem em uma coluna */
 }
 
 /* Estilo do conteúdo principal */
 .container {
-    flex: 1; /* O conteúdo principal cresce para ocupar o espaço disponível */
+    flex: 1;
+    /* O conteúdo principal cresce para ocupar o espaço disponível */
 }
 
 /* Estilo para destacar */
-.destaque{
-    font-weight: bold; /* Negrito */
+.destaque {
+    font-weight: bold;
+    /* Negrito */
     font-size: 16pt;
-    display:inline;
+    display: inline;
 }
 
-.d-prop{
+.d-prop {
     margin: 0;
     padding: 0;
-    display: block; /* Alinha o conteúdo de forma normal, sem usar flexbox */
-    text-align: center; /* Centraliza o conteúdo do parágrafo */
+    display: block;
+    /* Alinha o conteúdo de forma normal, sem usar flexbox */
+    text-align: center;
+    /* Centraliza o conteúdo do parágrafo */
 }
 
 /* Estilo de paragrafo centralizado */
 .p-centralizado {
-    width: 70%; /* O texto ocupa 70% da largura da tela */
-    margin: auto; /* Centraliza o parágrafo horizontalmente */
-    font-size: 14pt; /* Tamanho da fonte */
-    line-height: 1.5; /* Espaçamento entre linhas */
-    word-wrap: break-word; /* Permite a quebra de palavras longas */
-    white-space: normal; /* Garante que o texto possa quebrar normalmente */
+    width: 70%;
+    /* O texto ocupa 70% da largura da tela */
+    margin: auto;
+    /* Centraliza o parágrafo horizontalmente */
+    font-size: 14pt;
+    /* Tamanho da fonte */
+    line-height: 1.5;
+    /* Espaçamento entre linhas */
+    word-wrap: break-word;
+    /* Permite a quebra de palavras longas */
+    white-space: normal;
+    /* Garante que o texto possa quebrar normalmente */
 }
 
 /* Container principal do menu */
 .menu {
     display: flex;
-    justify-content: center; /* Centraliza os cards horizontalmente */
-    align-items: center; /* Centraliza os cards verticalmente */
-    gap: 100px; /* Aumenta o espaço entre os cards */
-    width: 100%; /* Agora ocupa toda a largura da tela */
-    max-width: 900px; /* Limita a largura máxima */
-    margin: 0 auto; /* Centraliza o container horizontalmente */
-    margin-top: 50px; /* Distância do elemento acima do menu */
-    margin-bottom: 50px; /* Distância do elemento abaixo do menu */
+    justify-content: center;
+    /* Centraliza os cards horizontalmente */
+    align-items: center;
+    /* Centraliza os cards verticalmente */
+    gap: 100px;
+    /* Aumenta o espaço entre os cards */
+    width: 100%;
+    /* Agora ocupa toda a largura da tela */
+    max-width: 900px;
+    /* Limita a largura máxima */
+    margin: 0 auto;
+    /* Centraliza o container horizontalmente */
+    margin-top: 50px;
+    /* Distância do elemento acima do menu */
+    margin-bottom: 50px;
+    /* Distância do elemento abaixo do menu */
 }
 
 /* Estilo para cada card */
@@ -119,52 +170,76 @@ html, body {
     background-color: #fff;
     padding: 20px;
     text-align: center;
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar o efeito de card */
-    width: 120px; /* Largura do card */
-    height: 150px; /* Altura do card */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave para dar o efeito de card */
+    width: 120px;
+    /* Largura do card */
+    height: 150px;
+    /* Altura do card */
     display: flex;
-    flex-direction: column; /* Organiza os itens em coluna (ícone e texto) */
-    justify-content: center; /* Centraliza o conteúdo verticalmente */
-    transition: transform 0.3s ease; /* Suaviza a transformação do card */
+    flex-direction: column;
+    /* Organiza os itens em coluna (ícone e texto) */
+    justify-content: center;
+    /* Centraliza o conteúdo verticalmente */
+    transition: transform 0.3s ease;
+    /* Suaviza a transformação do card */
 }
 
 .card:hover {
-    transform: translateY(-10px); /* Efeito de levitação ao passar o mouse */
-    cursor: pointer; /* Estilo de mão com dedo */
+    transform: translateY(-10px);
+    /* Efeito de levitação ao passar o mouse */
+    cursor: pointer;
+    /* Estilo de mão com dedo */
 }
 
 /* Estilo para os ícones */
 .material-icons {
-    font-size: 48px; /* Tamanho do ícone */
-    color: #FF6347; /* Cor do ícone (pode ser alterada) */
+    font-size: 48px;
+    /* Tamanho do ícone */
+    color: #FF6347;
+    /* Cor do ícone (pode ser alterada) */
 }
 
 /* Estilo para o texto do card */
 .card p {
     margin-top: 10px;
-    font-size: 16px; /* Tamanho da fonte */
-    color: #333; /* Cor do texto */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    color: #333;
+    /* Cor do texto */
     font-weight: bold;
 }
 
 /* Estilo para os ícones Material Symbols Outlined */
 .material-symbols-outlined {
-    font-size: 48px; /* Tamanho do ícone */
-    color: #FF6347; /* Cor do ícone (pode ser alterada) */
-    margin-bottom: 10px; /* Espaço abaixo do ícone */
+    font-size: 48px;
+    /* Tamanho do ícone */
+    color: #FF6347;
+    /* Cor do ícone (pode ser alterada) */
+    margin-bottom: 10px;
+    /* Espaço abaixo do ícone */
 }
 
 /* Estilo do rodapé */
 footer {
-    height: 5vh; /* O footer ocupa 10% da altura da viewport */
-    background-color: #333; /* Cor de fundo */
-    color: white; /* Cor do texto */
-    display: flex; /* Habilita o Flexbox */
-    justify-content: center; /* Centraliza o texto horizontalmente */
-    align-items: center; /* Centraliza o texto verticalmente */
-    text-align: center; /* Garante alinhamento do texto dentro do footer */
-    width: 100%; /* Garante que o rodapé ocupe 100% da largura */
+    height: 5vh;
+    /* O footer ocupa 10% da altura da viewport */
+    background-color: #333;
+    /* Cor de fundo */
+    color: white;
+    /* Cor do texto */
+    display: flex;
+    /* Habilita o Flexbox */
+    justify-content: center;
+    /* Centraliza o texto horizontalmente */
+    align-items: center;
+    /* Centraliza o texto verticalmente */
+    text-align: center;
+    /* Garante alinhamento do texto dentro do footer */
+    width: 100%;
+    /* Garante que o rodapé ocupe 100% da largura */
     font-size: 11pt;
 }
 
@@ -172,11 +247,12 @@ footer {
 /* --------------------------------------------------------------------------------------------------------------------- */
 
 /* Estilo Página de Contato */
-.informacoes-contato{
+.informacoes-contato {
     font-size: 18px;
     color: #555;
     margin: 10px 0;
-    gap: 10px; /* Espaçamento entre o ícone e o texto */
+    gap: 10px;
+    /* Espaçamento entre o ícone e o texto */
     flex-direction: column;
     margin-left: 1em;
 }
@@ -191,36 +267,44 @@ footer {
 }
 
 .material-icons-outlined {
-    font-size: 24px; /* Tamanho do ícone */
-    color: #007BFF; /* Cor dos ícones */
+    font-size: 24px;
+    /* Tamanho do ícone */
+    color: #007BFF;
+    /* Cor dos ícones */
 }
 
 .container-contato {
     display: flex;
-    justify-content: space-between; /* Divide a área em duas colunas */
+    justify-content: space-between;
+    /* Divide a área em duas colunas */
     gap: 20px;
     padding: 40px;
-    align-items: center;  /* Garante que as colunas fiquem alinhadas ao topo */
+    align-items: center;
+    /* Garante que as colunas fiquem alinhadas ao topo */
     height: 60vh;
 }
 
 /* Coluna da esquerda - Informações de Contato */
 .coluna-esquerda {
-    flex: 1; /* A primeira coluna ocupa o restante do espaço */
+    flex: 1;
+    /* A primeira coluna ocupa o restante do espaço */
     text-align: left;
 }
 
 /* Linha separadora entre as colunas */
 .linha-separadora {
     width: 1px;
-    background-color: #b5b5b5; /* Cor cinza clara */
-    height: calc(90vh - 80px); /* Ajuste a altura da linha com base na altura total da tela */
+    background-color: #b5b5b5;
+    /* Cor cinza clara */
+    height: calc(90vh - 80px);
+    /* Ajuste a altura da linha com base na altura total da tela */
     margin: auto;
 }
 
 /* Coluna da direita - Formulário de Contato */
 .coluna-direita {
-    flex: 1.2; /* A segunda coluna é um pouco maior */
+    flex: 1.2;
+    /* A segunda coluna é um pouco maior */
     text-align: left;
     padding-left: 20px;
     margin: auto;
@@ -239,7 +323,8 @@ form label {
     margin-bottom: 5px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     padding: 10px;
     font-size: 14px;
     border: 1px solid #ccc;
@@ -252,7 +337,8 @@ form textarea {
 }
 
 form .enviar-btn {
-    align-self: flex-end; /* Alinha o botão à direita */
+    align-self: flex-end;
+    /* Alinha o botão à direita */
     margin-right: 152px;
     margin-top: 10px;
     padding: 10px 20px;
@@ -296,5 +382,252 @@ form .enviar-btn:hover {
     line-height: 1.6;
     color: #555;
     text-align: justify;
-    line-height: 2; /* Espaçamento entre linhas */
+    line-height: 2;
+    /* Espaçamento entre linhas */
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* Estilo Página de Produto */
+
+/* Estilos gerais */
+.grid-container {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Grid de produtos */
+.grid-pdt {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 colunas */
+    grid-template-rows: repeat(2, auto);
+    /* 2 linhas */
+    gap: 100px;
+    /* Espaçamento entre os itens */
+    margin: 20px auto;
+    max-width: 2000px;
+    /* Largura máxima */
+}
+
+/* Estilos dos cards */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    /* Espaço interno maior */
+    width: 240px;
+    /* Largura fixa maior */
+    height: 300px;
+    /* Altura fixa maior */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* Sombra mais destacada */
+    text-align: center;
+    text-decoration: none;
+    /* Remover sublinhado */
+    color: inherit;
+    /* Herdar cor padrão */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+    /* Elevação ao passar o mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    max-width: 100%;
+    /* Imagem responsiva */
+    height: 220px;
+    /* Altura fixa */
+    object-fit: cover;
+    /* Garantir que a imagem se ajuste */
+    border-radius: 4px;
+}
+
+.card .nome-pdt {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* Estilo Página de Login 
+
+/* Container central */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98%;
+    background-color: #f4f4f4;
+}
+
+/* Caixa de login */
+.login-box {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+/* Título */
+.login-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Campos de input */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Botão de login */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+/* Links adicionais */
+.links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #0056b3;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* Estilo Página de Descrição de Produto */
+
+.pdt-container {
+    margin: 2rem auto auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    width: 80%;
+    max-width: 1000px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: auto;
+    min-height: 70vh; /* Defina uma altura mínima para o contêiner */
+}
+
+.pdt-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 20%; /* A imagem ocupará 40% do espaço disponível */
+}
+
+.pdt-img img {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.t-pdt{
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: #333;
+    font-size: 35pt;
+    text-shadow: 1px 6px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pdt-desc {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    flex: 1 1 80%; /* A descrição ocupará 60% do espaço disponível */
+    max-width: 500px;
+}
+
+.pdt-desc {
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.pdt-desc p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.pdt-desc .preco {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.buy-btn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 40%;
+    align-self: center;
+}
+
+.buy-btn:hover {
+    background-color: #218838;
 }
